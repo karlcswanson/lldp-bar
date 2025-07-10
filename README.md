@@ -9,4 +9,4 @@ lldp plugin for SwiftBar
 
 ## Intallation
 * Install lldpd and set it up to run as a daemon. The user running swiftbar will need to be in the `_lldpd` group to access the daemon. Installation can be tested by running `lldpcli show neighbors`.
-* Copy `lldp.py` to the SwiftBar folder.
+* Copy `lldp.py` to the SwiftBar folder.  The path for `lldpcli` may need to be adjusted depending on where it is installed.
