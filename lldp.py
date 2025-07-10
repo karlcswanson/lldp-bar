@@ -208,8 +208,8 @@ def main():
         return
 
     # Header with refresh option
-    print("Refresh | refresh=true sfimage=arrow.clockwise")
-    print("---")
+    # print("Refresh | refresh=true sfimage=arrow.clockwise")
+    # print("---")
 
     # Display each neighbor
     for i, interface in enumerate(interfaces):
