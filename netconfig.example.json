@@ -1,0 +1,17 @@
+{
+  "_comment": "Copy this file to netconfig.json and fill in your values. Keys: ssh_user (string, default username for switch SSH); baud_rates (list, shown under each detected serial port); profiles (list of static-IP profiles applied via networksetup, one click each). Profile fields: name (required), ip (required, e.g. '10.0.0.5/24' or '10.0.0.5'), subnet (required if ip has no /CIDR; '255.255.255.0' or '24'), router (optional; omit or empty for no default gateway), dns (optional list; omit to leave DNS untouched, [] to clear back to DHCP-supplied).",
+  "ssh_user": "admin",
+  "baud_rates": [9600, 19200, 38400, 57600, 115200],
+  "profiles": [
+    {
+      "name": "Lab",
+      "ip": "10.0.0.5/24",
+      "router": "10.0.0.1",
+      "dns": ["10.0.0.1", "1.1.1.1"]
+    },
+    {
+      "name": "Direct Link (no gateway)",
+      "ip": "192.0.2.10/24"
+    }
+  ]
+}

@@ -1,3 +1,9 @@
 # IDE files
 .idea/
 .vscode/
+
+# Python bytecode cache
+__pycache__/
+
+# User-local config (contains credentials, internal hostnames). Use netconfig.example.json as a template.
+netconfig.json
